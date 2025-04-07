@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, className , variant 
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-2 ${variantClasses[variant]} font-semibold rounded-4xl shadow-md ${className}`}
+      className={`px-4 cursor-pointer py-2 ${variantClasses[variant]} font-semibold rounded-4xl shadow-md ${className}`}
     >
       {children}
     </button>
