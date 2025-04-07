@@ -1,6 +1,6 @@
 // components/Header.tsx
 import Link from "next/link";
-import Input from "./Input";
+import Input from "@/components/ui/Input";
 
 const Header = () => {
   return (
@@ -16,23 +16,23 @@ const Header = () => {
           <Link href="/" className="text-[#7b6e5d] hover:text-[#6f4e37]">
             Home
           </Link>
-          <Link href="/about" className="text-[#7b6e5d] hover:text-[#6f4e37]">
-            About
-          </Link>
           <Link
             href="/products"
             className="text-[#7b6e5d] hover:text-[#6f4e37]"
           >
-            products
+            Products
+          </Link>
+          <Link href="/account" className="text-[#7b6e5d] hover:text-[#6f4e37]">
+            Account
           </Link>
           <Link href="/contact" className="text-[#7b6e5d] hover:text-[#6f4e37]">
-            Contact
+            Contact us
           </Link>
         </nav>
 
         {/* Search Bar */}
         <div className="relative">
-          <Input />
+          <Input placeholder="Search..." type="text"/>
         </div>
       </div>
     </header>

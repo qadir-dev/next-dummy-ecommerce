@@ -1,6 +1,6 @@
 
-import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 
 
