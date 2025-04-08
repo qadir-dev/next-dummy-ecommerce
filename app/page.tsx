@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+=======
+import Button from "@/components/ui/Button";
+
+
+>>>>>>> 1c4ab31449850b236af6d79e98a4002365a88c65
 const Home = () => {
   return (
     <>
