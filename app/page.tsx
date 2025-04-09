@@ -1,12 +1,10 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import { Loader } from "@/components/ui/Loader";
 
 const Home = () => {
   return (
     <>
-      <Header />
       <h1 className="text-3xl font-bold underline text-center">Dummy Coffee</h1>
-      <Footer />
+      <Loader size="lg" text="لطفاً صبر کنید..." />
     </>
   );
 };
