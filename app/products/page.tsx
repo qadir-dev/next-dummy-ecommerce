@@ -1,5 +1,5 @@
-import ProductCard from "@/components/product/ProductCard"
-import Pagination from "@/components/pagination/Pagination"
+import ProductCard from "@/components/ProductCard"
+import Pagination from "@/components/Pagination"
 import React from "react"
 
 const products = [

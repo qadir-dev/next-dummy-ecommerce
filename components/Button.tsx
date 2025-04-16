@@ -2,7 +2,12 @@ import React from "react";
 
 type Variant = "primary" | "accent" | "success" | "alert";
 
-type ButtonProps = { children: React.ReactNode; onClick?: () => void; className?: string ;variant?: Variant; };
+type ButtonProps = {
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+  variant?: Variant;
+};
 
 const variantClasses: Record<Variant, string> = {
   primary: "bg-[#6F4E37] hover:bg-[#5A3F2C] text-white",
@@ -11,8 +16,12 @@ const variantClasses: Record<Variant, string> = {
   alert: "bg-[#A65E3A] hover:bg-[#924E2F] text-white",
 };
 
-
-const Button: React.FC<ButtonProps> = ({ children, onClick, className , variant = "primary",}) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  onClick,
+  className,
+  variant = "primary",
+}) => {
   return (
     <button
       onClick={onClick}

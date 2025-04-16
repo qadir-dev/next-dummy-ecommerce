@@ -19,10 +19,9 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
 
   return (
     <div className="flex justify-center items-center mt-20">
-      {/* دکمه First */}
       <Link
         href={createPageURL(1)}
-        className={`px-7 py-7 rounded-l-lg border-solid border-1 font-bold border-gray-300 shadow-[0_2px_4px_rgba(0,0,0,0.1)] ${
+        className={`px-5 py-5 rounded-xl border-solid border-1 font-bold border-gray-300 shadow-[0_2px_4px_rgba(0,0,0,0.1)] ${
           currentPage === 1
             ? "bg-gray-200 cursor-not-allowed text-gray-400"
             : "text-[#3E3E3E] hover:bg-[#FAF6F0]"
@@ -32,17 +31,6 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
         First
       </Link>
 
-      {/* دکمه Previous (مخفی در صفحه اول) */}
-      {/* {currentPage > 1 && (
-        <Link
-          href={createPageURL(currentPage - 1)}
-          className="px-4 py-5 border-solid border-1 font-bold border-gray-300 text-[#3E3E3E] hover:bg-[#FAF6F0]"
-        >
-          &lt;
-        </Link>
-      )} */}
-
-      {/* شماره صفحات */}
       {Array.from({ length: Math.min(3, totalPages) }, (_, i) => {
         let pageNum;
         if (totalPages <= 3) {
@@ -59,7 +47,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
           <Link
             key={pageNum}
             href={createPageURL(pageNum)}
-            className={`px-4 py-7 border-solid border-1 border-gray-300 font-bold shadow-[0_2px_4px_rgba(0,0,0,0.1)] ${
+            className={`px-5 py-5 rounded-xl border-solid border-1 border-gray-300 font-bold shadow-[0_2px_4px_rgba(0,0,0,0.1)] ${
               currentPage === pageNum
                 ? "bg-[#6F4E37] text-white "
                 : "text-[#3E3E3E] hover:bg-[#FAF6F0]"
@@ -70,20 +58,9 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
         );
       })}
 
-      {/* دکمه Next (مخفی در صفحه آخر) */}
-      {/* {currentPage < totalPages && (
-        <Link
-          href={createPageURL(currentPage + 1)}
-          className="px-4 py-5 border-solid border-1 border-gray-300 font-bold text-[#3E3E3E] hover:bg-[#FAF6F0]"
-        >
-          &gt;
-        </Link>
-      )} */}
-
-      {/* دکمه Last */}
       <Link
         href={createPageURL(totalPages)}
-        className={`px-7 py-7 rounded-r-lg border-solid border-1 font-bold border-gray-300 shadow-[0_2px_4px_rgba(0,0,0,0.1)] ${
+        className={`px-5 py-5 rounded-xl border-solid border-1 font-bold border-gray-300 shadow-[0_2px_4px_rgba(0,0,0,0.1)] ${
           currentPage === totalPages
             ? "bg-gray-200 cursor-not-allowed text-gray-400 "
             : "text-[#3E3E3E] hover:bg-[#FAF6F0]"

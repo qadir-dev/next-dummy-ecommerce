@@ -1,11 +1,11 @@
 import React from "react";
 
 type TINPUT = {
-  placeholder: string,
+  placeholder: string;
   type: string;
-}
+};
 
-const Input: React.FC<TINPUT> = ({placeholder, type}) => {
+const Input: React.FC<TINPUT> = ({ placeholder, type }) => {
   return (
     <input
       type={type}

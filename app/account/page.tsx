@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const Account = () => {
   return (
     <div>This is Costumer Panel</div>
   )
 }
 
-export default page
+export default Account
