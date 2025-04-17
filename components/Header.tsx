@@ -1,13 +1,14 @@
 // components/Header.tsx
 import Link from "next/link";
 import Input from "@/components/Input";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="w-full bg-[#faf6f0] shadow-md p-4">
+    <header className="w-full bg-[#faf6f0] shadow-md  p-4">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-xl font-bold text-[#4b2e2b]">
-          <Link href="/">MyLogo</Link>
+          <Link href="/"><Image src='/images/logo.png' alt="" width={55} height={55}/></Link>
         </div>
 
         <nav className="space-x-6 hidden md:flex">
@@ -28,7 +29,7 @@ const Header = () => {
           </Link>
         </nav>
 
-        <div className="relative">
+        <div className="relative ">
           <Input placeholder="Search..." type="text" />
         </div>
       </div>

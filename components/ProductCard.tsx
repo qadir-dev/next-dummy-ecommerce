@@ -13,7 +13,7 @@ const ProductCard: React.FC<Product> = ({ name, price }) => {
       <div>
         <Image
           className="rounded-4xl"
-          src="/image/coffee.jpg"
+          src="/images/coffee.jpg"
           alt="coffee"
           width={300}
           height={300}

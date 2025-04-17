@@ -2,6 +2,14 @@ import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "Dummy Coffee",
+  description: "",
+  icons: {
+    icon: "./images/logo.png",
+  },
+};
+
 const RootLayout = ({
   children,
 }: Readonly<{
