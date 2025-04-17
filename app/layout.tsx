@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import { Provider } from "react-redux";
-import { store } from "@/services/store";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Next Coffee",
@@ -18,11 +17,11 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className="w-screen h-screen">
-        <Provider store={store}>
+        <Providers>
           <Header />
           {children}
           <Footer />
-        </Provider>
+        </Providers>
       </body>
     </html>
   );
