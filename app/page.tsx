@@ -1,4 +1,7 @@
+"use client";
 import { Loader } from "@/components/ui/Loader";
+import { store } from "@/services/store";
+import { Provider } from "react-redux";
 
 const Home = () => {
   return (
