@@ -12,19 +12,19 @@ const Header = () => {
         </div>
 
         <nav className="space-x-6 hidden md:flex">
-          <Link href="/" className="text-[#7b6e5d] hover:text-[#6f4e37]">
+          <Link href="/" className="text-[#7b6e5d]  hover:text-[#6f4e37] transition duration-300">
             Home
           </Link>
           <Link
             href="/products"
-            className="text-[#7b6e5d] hover:text-[#6f4e37]"
+            className="text-[#7b6e5d] hover:text-[#6f4e37] transition duration-300"
           >
             Products
           </Link>
-          <Link href="/account" className="text-[#7b6e5d] hover:text-[#6f4e37]">
+          <Link href="/account" className="text-[#7b6e5d] hover:text-[#6f4e37] transition duration-300">
             Account
           </Link>
-          <Link href="/contact" className="text-[#7b6e5d] hover:text-[#6f4e37]">
+          <Link href="/contact" className="text-[#7b6e5d] hover:text-[#6f4e37] transition duration-300">
             Contact us
           </Link>
         </nav>

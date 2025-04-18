@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`px-4 cursor-pointer py-2 ${variantClasses[variant]} font-semibold rounded-4xl shadow-md ${className}`}
+      className={`px-4 cursor-pointer py-2 ${variantClasses[variant]} font-semibold rounded-4xl shadow-md ${className} transition duration-300`}
     >
       {children}
     </button>
