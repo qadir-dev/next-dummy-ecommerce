@@ -17,7 +17,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="fa">
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen vazir-font">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
