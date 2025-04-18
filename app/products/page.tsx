@@ -20,7 +20,6 @@ const products = [
   { name: "Mocha", price: 120 },
   { name: "Mocha", price: 120 },
   { name: "Mocha", price: 120 },
-  // ... محصولات بیشتر
 ];
 
 const page = ({ searchParams }: { searchParams: { page?: string } }) => {
@@ -31,8 +30,8 @@ const page = ({ searchParams }: { searchParams: { page?: string } }) => {
   const currentProducts = products.slice(startIndex, startIndex + itemsPerPage);
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-6">Our Products</h1>
+      <div className="container xl:px-30 px-4 py-8">
+        <h1 className="text-2xl mr-5 font-bold mb-6">محصولات ما</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {currentProducts.map((product, index) => (

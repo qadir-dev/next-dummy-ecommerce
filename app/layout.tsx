@@ -16,8 +16,8 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="fa">
-      <body className="flex flex-col min-h-screen vazir-font">
+    <html lang="fa" dir="rtl">
+      <body className="flex flex-col min-h-screen vazir-font text-right" >
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

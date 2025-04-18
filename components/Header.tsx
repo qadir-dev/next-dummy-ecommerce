@@ -13,19 +13,19 @@ const Header = () => {
 
         <nav className="space-x-6 hidden md:flex">
           <Link href="/" className="text-[#7b6e5d]  hover:text-[#6f4e37] transition duration-300">
-            Home
+            خانه
           </Link>
           <Link
             href="/products"
             className="text-[#7b6e5d] hover:text-[#6f4e37] transition duration-300"
           >
-            Products
+            محصولات
           </Link>
           <Link href="/account" className="text-[#7b6e5d] hover:text-[#6f4e37] transition duration-300">
-            Account
+            حساب کاربری
           </Link>
           <Link href="/contact" className="text-[#7b6e5d] hover:text-[#6f4e37] transition duration-300">
-            Contact us
+            تماس با ما
           </Link>
         </nav>
 
